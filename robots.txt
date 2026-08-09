@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Content signals (https://llmstxt.org/robots.txt convention)
+# search   = building a search index / search results
+# ai-input = inputting content into AI models (RAG, grounding, generative answers)
+# ai-train = training or fine-tuning AI models
+#
+# Echo Sentiment MCP: README, docs, and endpoint descriptions may be used
+# for search and AI input. Live API discovery for agents:
+#   - /llms.txt  (service summary + endpoint list)
+#   - /openapi.json (machine-readable spec)
+#   - /.well-known/x402 (payment discovery — pay-per-call, no API keys)
+# Training/fine-tuning is not granted.
+Content-Signal: search=yes
+Content-Signal: ai-input=yes
+Content-Signal: ai-train=no
+
+Sitemap: /sitemap.xml

@@ -1,0 +1,37 @@
+# Echo Sentiment MCP
+
+MCP server (streamable HTTP) exposing keyless XLM market sentiment — pay-per-call via x402, no API keys, no subscriptions. The payment is the authentication.
+
+## What this is
+
+A Model Context Protocol server that gives AI agents real-time XLM (Stellar) market intelligence: sentiment score, live price, order-flow imbalance, and Fear & Greed context. Deterministic, rules-based scoring (no model drift).
+
+## How agents use it
+
+1. Connect to the MCP endpoint (run `mcp_bridge.py`, or use the hosted remote server).
+2. Call a tool — the server replies `HTTP 402` with a `payment-required` header (x402 V2: scheme `exact`, USDC on Base mainnet, payTo wallet).
+3. Agent pays on-chain (e.g. MetaMask agent wallet / mcp-x402 header generator), replays with `PAYMENT-SIGNATURE`.
+4. Server returns the data + Ed25519 attestation.
+
+## Repository contents
+
+- `mcp_bridge.py` — MCP server entrypoint (FastAPI + streamable HTTP on 127.0.0.1:8010/mcp)
+- `signals.py` — rules-based sentiment computation
+- `config.py` — endpoint configuration
+- `examples/client_call.py` — example MCP client call
+- `README.md` — full docs (setup, tools, pricing)
+
+## Live API
+
+- Landing / docs: https://abstain-eliminate-unison.ngrok-free.dev/
+- llms.txt: https://abstain-eliminate-unison.ngrok-free.dev/llms.txt
+- OpenAPI: https://abstain-eliminate-unison.ngrok-free.dev/openapi.json
+- Payment discovery: https://abstain-eliminate-unison.ngrok-free.dev/.well-known/x402
+
+## Pricing
+
+Pay-per-call USDC (Base mainnet): basic endpoints $0.005/call, premium report $0.05, history $0.10. Free sample endpoint for tasting.
+
+## License
+
+MIT

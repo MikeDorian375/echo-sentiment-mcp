@@ -52,6 +52,14 @@ python mcp_bridge.py          # serves streamable HTTP MCP on 127.0.0.1:8010
 Connect any MCP client (Claude Desktop, Cursor, custom agents) to
 `http://127.0.0.1:8010/mcp` (or run it behind your own HTTPS).
 
+**Agent-wallet ready**: agents that hold a wallet (e.g. MetaMask Agent
+Wallet, GA Aug 2026) can pay per call with zero API keys — payment is the
+auth, via the x402 protocol. Works with MetaMask's official
+[`mcp-x402`](https://github.com/MetaMask/mcp-x402) header generator —
+verified end-to-end on Base mainnet (Aug 8 2026): the raw V1 header their
+server signs is accepted directly by this API via a server-side V1→V2
+shim (no client-side remapping needed; settlement tx on-chain).
+
 ## Why
 
 - **Rules-based**: deterministic scores, no model drift, cheap to run.
