@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://mikedorian375.github.io/echo-sentiment-mcp/</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mikedorian375.github.io/echo-sentiment-mcp/llms.txt</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mikedorian375.github.io/echo-sentiment-mcp/robots.txt</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://mikedorian375.github.io/echo-sentiment-mcp/README.md</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://github.com/MikeDorian375/echo-sentiment-mcp</loc>
-    <lastmod>2026-08-09</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://github.com/MikeDorian375/echo-sentiment-mcp#readme</loc>
-    <lastmod>2026-08-09</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://raw.githubusercontent.com/MikeDorian375/echo-sentiment-mcp/main/llms.txt</loc>
     <lastmod>2026-08-09</lastmod>
     <changefreq>weekly</changefreq>
   </url>
