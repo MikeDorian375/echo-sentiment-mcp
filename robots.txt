@@ -16,4 +16,4 @@ Content-Signal: search=yes
 Content-Signal: ai-input=yes
 Content-Signal: ai-train=no
 
-Sitemap: /sitemap.xml
+Sitemap: https://mikedorian375.github.io/echo-sentiment-mcp/sitemap.xml
